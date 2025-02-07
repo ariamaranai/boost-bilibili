@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script","stylesheet"],
+      "requestMethods": ["get"],
+      "domainTypes": "thirdParty",
+      "regexFilter": "^https://s1\\.hdslb\\.com/.*?(medium\\.css|bili-collect|fingerprint\\.min|log-reporter)"
+    }
+  }
+]

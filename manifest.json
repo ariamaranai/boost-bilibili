@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "boost-bilibili",
+  "version": "0",
+  "description": "Boost bilibili.com",
+  "icons": {
+    "128": "128.png"
+  },
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "0",
+        "path": "0.json",
+        "enabled": true
+      }
+    ]
+  },
+  "content_scripts":[{
+    "js": ["main.js"],
+    "matches": ["https://*.bilibili.com/*"],
+    "world": "MAIN",
+    "run_at": "document_start"
+  }]
+}
