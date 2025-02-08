@@ -5,10 +5,22 @@
       "type": "block"
     },
     "condition": {
+      "resourceTypes": ["image"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "regexFilter": "^https://i0\\.hdslb\\.com/bfs/[^a]"
+    }
+  },
+  {
+    "id": 2,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
       "resourceTypes": ["script","stylesheet"],
       "requestMethods": ["get"],
       "domainTypes": "thirdParty",
-      "regexFilter": "^https://s1\\.hdslb\\.com/.*?(medium\\.css|bili-collect|fingerprint\\.min|log-reporter)"
+      "regexFilter": "^https://s1\\.hdslb\\.com/.*?(laputa-|token-|medium\\.css|log|collect|finger)"
     }
   }
 ]
