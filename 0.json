@@ -20,7 +20,7 @@
       "resourceTypes": ["script","stylesheet"],
       "requestMethods": ["get"],
       "domainTypes": "thirdParty",
-      "regexFilter": "^https://s1\\.hdslb\\.com/.*?(token-|er\\.umd|medium\\.css|log|collect|finger)"
+      "regexFilter": "^https://s1\\.hdslb\\.com/.*?(token-|medium|regular|icon-font|mirror|captcha|polyfill|BiliMusic|log|collect|finger)"
     }
   }
 ]
