@@ -20,6 +20,7 @@
     }]
   },
   "content_scripts":[{
+    "css": ["main.css"],
     "js": ["main.js"],
     "matches": ["https://*.bilibili.com/*"],
     "world": "MAIN",
