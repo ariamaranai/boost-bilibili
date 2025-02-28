@@ -24,5 +24,18 @@
       "domainTypes": "thirdParty",
       "regexFilter": "^https://s1\\.hdslb\\.com/.*?(token-|medium|regular|icon-font|mirror|Captcha|BiliMusic|log|collect|finger)"
     }
+  },
+  {
+    "id": 3,
+    "priority": 1069999997,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainTypes": "firstParty",
+      "urlFilter": "/gentleman/polyfill.js?features=globalThis|"
+    }
   }
 ]
