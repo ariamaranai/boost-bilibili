@@ -6,7 +6,11 @@
   "icons": {
     "128": "128.png"
   },
+  "omnibox": {
+    "keyword": "bi"
+  },
   "permissions": [
+    "contextMenus",
     "declarativeNetRequest"
   ],
   "host_permissions": [
@@ -19,11 +23,17 @@
       "enabled": true
     }]
   },
+  "background": {
+    "service_worker": "bg.js"
+  },
   "content_scripts":[{
     "css": ["main.css"],
     "js": ["main.js"],
     "matches": ["https://*.bilibili.com/*"],
     "world": "MAIN",
     "run_at": "document_start"
-  }]
+  }],
+  "action": {
+    "default_popup": "popup.htm"
+  }
 }
