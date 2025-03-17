@@ -1,4 +1,5 @@
 ::-webkit-scrollbar,
-#biliMainFooter {
+#biliMainFooter,
+#biliMainHeader {
   display: none !important
 }
