@@ -1,1 +1,1 @@
-onkeyup = e => (e.key == "Enter" && close(chrome.tabs.update({ url: "https://search.bilibili.com/all?keyword=" + e.target.value })));
+onkeyup = e => e.keyCode == 13 && close(chrome.tabs.update({ url: "https://search.bilibili.com/all?keyword=" + e.target.value }));
