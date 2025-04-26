@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "boost-bilibili",
   "version": "0",
-  "description": "Boost bilibili.com",
+  "description": "Boost and search for bilibili.com",
   "icons": {
     "128": "128.png"
   },
