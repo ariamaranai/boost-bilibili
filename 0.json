@@ -19,10 +19,10 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["script","stylesheet"],
+      "resourceTypes": ["stylesheet","script"],
       "requestMethods": ["get"],
       "domainTypes": "thirdParty",
-      "regexFilter": "^https://s1\\.hdslb\\.com/.*?(token-|medium|regular|-header|-mirror|Captcha|BiliMusic|log|collect|finger|comments)"
+      "urlFilter": "|https://s1.hdslb.com/bfs/seed/jinkela/short"
     }
   },
   {
@@ -34,8 +34,21 @@
     "condition": {
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
+      "domainTypes": "thirdParty",
+      "regexFilter": "(BiliMusic\\.umd\\.min\\.js|bili-collect\\.js|bili-comments\\.js|bili-header\\.umd\\.js|biliMirror\\.umd\\.mini\\.js|fingerprint\\.min\\.js|log-reporter\\.js)$"
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1069999996,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
       "domainTypes": "firstParty",
-      "urlFilter": "/gentleman/polyfill.js?features=globalThis|"
+      "urlFilter": "features=globalThis|"
     }
   }
 ]
