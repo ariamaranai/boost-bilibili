@@ -22,25 +22,12 @@
       "resourceTypes": ["stylesheet","script"],
       "requestMethods": ["get"],
       "domainTypes": "thirdParty",
-      "urlFilter": "|https://s1.hdslb.com/bfs/seed/jinkela/short"
-    }
-  },
-  {
-    "id": 3,
-    "priority": 1069999997,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
-      "resourceTypes": ["script"],
-      "requestMethods": ["get"],
-      "domainTypes": "thirdParty",
-      "regexFilter": "(BiliMusic\\.umd\\.min\\.js|bili-collect\\.js|bili-comments\\.js|bili-header\\.umd\\.js|biliMirror\\.umd\\.mini\\.js|fingerprint\\.min\\.js|log-reporter\\.js)$"
+      "regexFilter": "^https://s1\\.hdslb\\.com/bfs/(?:seed/|static/(?:jinkela(short|long)|laputa-search/client/assets/svgfont)|cm)"
     }
   },
   {
     "id": 4,
-    "priority": 1069999996,
+    "priority": 1069999997,
     "action": {
       "type": "block"
     },
