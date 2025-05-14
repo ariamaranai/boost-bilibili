@@ -22,7 +22,7 @@
       "resourceTypes": ["stylesheet","script"],
       "requestMethods": ["get"],
       "domainTypes": "thirdParty",
-      "regexFilter": "^https://s1\\.hdslb\\.com/bfs/(?:seed/|static/(?:jinkela[sl]|laputa-search/client/assets/svgfont)|cm)"
+      "regexFilter": "^https://s1\\.hdslb\\.com/bfs/(?:seed/|static/(?:jinkela/[sl]|laputa-search/client/assets/svgfont)|cm)"
     }
   },
   {
