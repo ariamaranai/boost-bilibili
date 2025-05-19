@@ -9,7 +9,8 @@
       "resourceTypes": ["image"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "regexFilter": "^https://i0\\.hdslb\\.com/bfs/[^a]"
+      "regexFilter": "^https://i0\\.hdslb\\.com/bfs/[^a]",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -22,7 +23,8 @@
       "resourceTypes": ["stylesheet","script"],
       "requestMethods": ["get"],
       "domainTypes": "thirdParty",
-      "regexFilter": "^https://s1\\.hdslb\\.com/bfs/(?:seed/|static/(?:jinkela/[sl]|laputa-search/client/assets/svgfont)|cm)"
+      "regexFilter": "^https://s1\\.hdslb\\.com/bfs/(?:seed/|static/(?:jinkela/[sl]|laputa-search/client/assets/svgfont)|cm)",
+      "isUrlFilterCaseSensitive": true
     }
   },
   {
@@ -35,7 +37,8 @@
       "resourceTypes": ["script"],
       "requestMethods": ["get"],
       "domainTypes": "firstParty",
-      "urlFilter": "features=globalThis|"
+      "urlFilter": "features=globalThis|",
+      "isUrlFilterCaseSensitive": true
     }
   }
 ]
