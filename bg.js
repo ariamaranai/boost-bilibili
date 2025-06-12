@@ -12,11 +12,6 @@ chrome.omnibox.onInputEntered.addListener(q =>
     url: "https://search.bilibili.com/all?keyword=" + q
   })
 );
-chrome.runtime.onStartup.addListener(() =>
-  chrome.action.setPopup({
-    popup: "popup.htm"
-  })
-);
 chrome.runtime.onInstalled.addListener(() =>
   chrome.contextMenus.create({
     id: "",
