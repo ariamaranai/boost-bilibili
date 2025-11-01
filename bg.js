@@ -1,16 +1,11 @@
 chrome.contextMenus.onClicked.addListener((_, { windowId }) =>
-  chrome.windows.get(windowId, async window => (
-    window.state == "fullscreen" &&
-    await chrome.windows.update(windowId, {
-      state: "maximized"
-    }),
+  chrome.windows.get(windowId, window => (
+    window.state == "fullscreen" && chrome.windows.update(windowId, { state: "maximized" }),
     chrome.action.openPopup()
   ))
 );
 chrome.omnibox.onInputEntered.addListener(q =>
-  chrome.tabs.update({
-    url: "https://search.bilibili.com/all?keyword=" + q
-  })
+  chrome.tabs.update({ url: "https://search.bilibili.com/all?keyword=" + q })
 );
 chrome.runtime.onInstalled.addListener(() =>
   chrome.contextMenus.create({
