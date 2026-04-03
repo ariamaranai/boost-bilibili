@@ -7,5 +7,5 @@ Math.random = () => .1;
   MediaSource.isTypeSupported = () => 1;
 
   let fet = fetch;
-  fetch = (a, b) => a[2] != "d" && fet(a, b);
+  fetch = (a, b) => a.charCodeAt(2) != 100 && fet(a, b);
 }
