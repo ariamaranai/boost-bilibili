@@ -1,6 +1,6 @@
 chrome.contextMenus.onClicked.addListener((_, { windowId }) =>
   chrome.windows.get(windowId, window => (
-    window.state == "fullscreen" && chrome.windows.update(windowId, { state: "maximized" }),
+    window.state != "fullscreen" || chrome.windows.update(windowId, { state: "maximized" }),
     chrome.action.openPopup()
   ))
 );
